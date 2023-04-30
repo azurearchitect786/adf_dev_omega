@@ -1,0 +1,9 @@
+{
+	"name": "adfdevomega",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "30bf3e00-c138-4b73-b457-32e7b344b683",
+		"tenantId": "61cfbac0-31b5-4fa9-9f52-4b718e70bd9e"
+	}
+}
