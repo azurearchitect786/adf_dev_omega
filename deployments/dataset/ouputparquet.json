@@ -1,0 +1,20 @@
+{
+	"name": "ouputparquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalakedvwygou",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "output",
+				"fileSystem": "files"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
