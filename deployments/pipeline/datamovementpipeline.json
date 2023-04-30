@@ -122,7 +122,17 @@
 				"inputs": [
 					{
 						"referenceName": "demodatasetsouce",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filesystem": {
+								"value": "@pipeline().parameters.filesystem",
+								"type": "Expression"
+							},
+							"directory": {
+								"value": "@pipeline().parameters.folder",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
