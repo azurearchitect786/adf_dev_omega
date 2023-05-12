@@ -1,0 +1,41 @@
+{
+	"name": "Dispatch",
+	"properties": {
+		"activities": [
+			{
+				"name": "Process-Data",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/azurearchitect8@gmail.com/Process-Data",
+					"baseParameters": {
+						"folder": {
+							"value": "@pipeline().parameters.folderidecide",
+							"type": "Expression"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "databricksp9yf2i3",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"folderidecide": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-05-12T18:08:14Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
